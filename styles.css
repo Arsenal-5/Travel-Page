@@ -1,4 +1,4 @@
-#hero {
+/* #hero {
     height: 500px;
     background-image: url("images/places/ocean.jpg");
     background-position: center;
@@ -92,4 +92,247 @@
     border-radius: 10px;
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     object-fit: cover;
+} */
+
+html{
+    position: relative;
+}
+
+#hero{
+    background-image: url("./images/places/ocean.jpg");
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-content{
+    width: 37.5rem;
+    background-color: rgba(51, 47, 47, 0.8);
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.8rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 6.25rem;
+    z-index: 1;
+}
+
+#hero-content h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+#hero-content p {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+#hero-content a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 251, 0);
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#hero-content a:hover{
+    background-color: rgb(255, 238, 0);
+}
+
+#highlights{
+    padding: 1.25rem;
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(59, 65, 64);
+    margin: 1.25rem 0;
+}
+
+.destination img{
+    width: 18.75rem;
+    height: 12.5rem;
+    object-fit: cover;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+}
+
+.destinations{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    column-gap: 14px;
+}
+
+strong{
+    color: rgb(0, 160, 117);
+}
+
+.destination p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: rgb(124, 123, 123);
+    margin: 18px 0;
+}
+
+.menu-btn{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(245, 243, 160);
+}
+
+.menu-btn span:nth-of-type(1){
+    margin-top: -3px;
+}
+
+#side-drawer {
+    background-color: rgb(66, 62, 62);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+#side-drawer:target{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer ul{
+    padding-top: 5rem;
+}
+
+#side-drawer li{
+    padding: 0.5rem;
+}
+
+#side-drawer a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(255, 251, 0);
+}
+
+aside nav{
+    position: relative;
+}
+
+.aside-menu{
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.85rem 0;
+    }
+
+    header a:hover{
+        background-color: initial;
+    }
+    header nav{
+        display: none;
+    }
+
+    #page-logo{
+        font-size: 1.2rem;
+    }
+
+    .destinations{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+}
+
+@media(max-width:658px){
+    #hero-content{
+        width: 75%;
+    }
+
+    #hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero-content a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:476px) {
+    #page-logo a{
+        font-size: 1.7rem;
+    }
+
+    #hero-content p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 360px){
+    #page-logo a{
+        font-size: 1.2rem;
+    }
+
+    #highlights h2{
+        font-size: 1.5rem;
+    }
+
+    .destinations {
+        width: 18.75rem;
+    }
+
+    .destination img{
+        width: 16rem;
+    }
+
+    .destination p {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    footer li{
+        padding: 1.2rem;
+    }
+
+    footer img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
 }
